@@ -39,8 +39,6 @@ class _SlideFadeTransitionState extends State<SlideFadeTransition>
       vsync: this,
       duration: widget.animationDuration,
     );
-
-    //configure the animation controller as per the direction
     if (widget.direction == Direction.left) {
       _animationSlide =
           Tween<Offset>(begin: Offset(5, widget.offset), end: Offset(0, 0))
