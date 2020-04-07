@@ -5,27 +5,11 @@ import 'package:flutter/material.dart';
 enum Direction { left, right }
 
 class SlideFadeTransition extends StatefulWidget {
-  ///The child on which to apply the given [SlideFadeTransition]
   final Widget child;
-
-  ///The offset by which to slide and [child] into view from [Direction].
-  ///Defaults to 0.2
   final double offset;
-
-  ///The curve used to animate the [child] into view.
-  ///Defaults to [Curves.easeIn]
   final Curve curve;
-
-  ///The direction from which to animate the [child] into view. [Direction.horizontal]
-  ///will make the child slide on x-axis by [offset] and [Direction.vertical] on y-axis.
-  ///Defaults to [Direction.vertical]
   final Direction direction;
-
-  ///The delay with which to animate the [child]. Takes in a [Duration] and
-  /// defaults to 0.0 seconds
   final Duration delayStart;
-
-  ///The total duration in which the animation completes. Defaults to 800 milliseconds
   final Duration animationDuration;
 
   SlideFadeTransition({
